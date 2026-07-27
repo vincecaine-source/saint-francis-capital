@@ -239,8 +239,10 @@ section {
   color: var(--color-text);
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  min-width: 0;
 }
-.brand svg { height: 30px; width: auto; color: var(--color-text); }
+.brand svg { height: 30px; width: auto; color: var(--color-text); flex-shrink: 0; }
 .brand:hover { opacity: 0.85; }
 
 .main-nav {
