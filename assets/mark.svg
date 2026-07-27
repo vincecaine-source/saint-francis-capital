@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="Saint Francis Capital mark">
+  <path d="M4 38 C 15 38, 20 12, 30 12 C 39 12, 41 25, 46 25" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M39 18 L46 25 L39 32" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="4" cy="38" r="3.2" fill="currentColor"/>
+  <circle cx="30" cy="12" r="1.8" fill="currentColor" opacity="0.55"/>
+</svg>
