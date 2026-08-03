@@ -566,6 +566,19 @@ section {
   margin-bottom: var(--space-5);
 }
 
+.monogram-photo {
+  width: 96px; height: 96px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--color-gold);
+  object-fit: cover;
+  display: block;
+  margin-bottom: var(--space-5);
+}
+
+.monogram-photo.lg {
+  width: 144px; height: 144px;
+}
+
 /* Pull quote */
 .pull-quote {
   font-family: var(--font-display);
@@ -666,6 +679,7 @@ section {
   .split.reverse > * { direction: ltr; }
 }
 .split img { border-radius: var(--radius-lg); }
+.split img.monogram-photo { border-radius: var(--radius-full); }
 
 /* Team */
 .team-grid {
