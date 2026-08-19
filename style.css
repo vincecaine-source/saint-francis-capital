@@ -243,6 +243,7 @@ section {
   min-width: 0;
 }
 .brand svg { height: 30px; width: auto; color: var(--color-text); flex-shrink: 0; }
+.brand .brand-logo { height: 48px; width: auto; flex-shrink: 0; border-radius: var(--radius-sm); }
 .brand:hover { opacity: 0.85; }
 
 .main-nav {
@@ -848,6 +849,7 @@ section {
 }
 .footer-grid a:hover { color: var(--color-gold); }
 .footer-brand svg { height: 26px; width: auto; color: var(--color-text); margin-bottom: var(--space-4); }
+.footer-brand .brand-logo { height: 44px; width: auto; margin-bottom: var(--space-4); border-radius: var(--radius-sm); }
 .footer-brand p { color: var(--color-text-muted); font-size: var(--text-sm); max-width: 42ch; }
 .footer-disclosure {
   border-top: 1px solid var(--color-divider);
