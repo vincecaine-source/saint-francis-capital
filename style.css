@@ -232,7 +232,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 76px;
+  height: 148px;
   gap: var(--space-4);
 }
 .brand {
@@ -243,7 +243,7 @@ section {
   min-width: 0;
 }
 .brand svg { height: 30px; width: auto; color: var(--color-text); flex-shrink: 0; }
-.brand .brand-logo { height: 46px; width: auto; flex-shrink: 0; }
+.brand .brand-logo { height: 92px; width: auto; flex-shrink: 0; }
 .brand:hover { opacity: 0.85; }
 
 .logo-swap { display: inline-block; line-height: 0; }
@@ -403,6 +403,11 @@ section {
   padding-inline: var(--space-4);
 }
 .hero-content .eyebrow { color: var(--color-gold); }
+.hero-eyebrow {
+  font-size: var(--text-lg);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-4);
+}
 .hero-logo {
   display: block;
   height: clamp(130px, 14vw, 210px);
