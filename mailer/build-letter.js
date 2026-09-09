@@ -150,7 +150,7 @@ const bridgeParas = [
 const founderPara = new Paragraph({
   spacing: { after: 180 },
   children: [
-    new TextRun({ text: sq(`That's why I started Saint Francis Capital in 2013 — to build that kind of plan for pilots, by a pilot. Over more than three decades in the cockpit, I flew Boeing 727, 737, 757, 767, and DC-10 aircraft based out of Denver, Guam, Manila, Los Angeles, Houston, Cleveland, Honolulu, and Newark, and served as an elected union officer for my fellow pilots. I built this firm to bring the same discipline to retirement planning for United pilots that we brought to the flight deck — and every month, I share more of that thinking directly with clients in our Monthly Client Letter.`), font: 'Calibri', size: 23, color: '1A1A1A' }),
+    new TextRun({ text: sq(`That's why I started Saint Francis Capital in 2013 — to build that kind of plan for pilots, by a pilot. Over more than three decades in the cockpit, I flew Boeing 727, 737, 757, 767, and DC-10 aircraft based out of Denver, Guam, Manila, Los Angeles, Houston, Cleveland, Honolulu, and Newark, and served as an elected union officer for my fellow pilots. I built this firm to bring the same discipline to retirement planning for United pilots that we brought to the flight deck — and every month, we share more of that thinking directly with clients in our Monthly Client Letter.`), font: 'Calibri', size: 23, color: '1A1A1A' }),
   ],
 });
 
@@ -201,7 +201,7 @@ const ctaPara = new Paragraph({
   spacing: { before: 180, after: 160 },
   children: [
     new TextRun({
-      text: `I recorded a short video — about ninety seconds — sharing more of this story and what it means for the decisions ahead of you. Scan the code on this page to watch it, or reach out directly to my colleague Kelly Holliday to schedule a complimentary conversation about where you stand.`,
+      text: sq(`I recorded a short video — about ninety seconds — on what I think pilots need most from an advisor, and it's not what most firms lead with. Scan the code on this page to watch it, or reach out directly to my colleague Kelly Holliday to schedule a complimentary conversation about where you stand.`),
       font: 'Calibri', size: 23, color: '1A1A1A',
     }),
   ],
