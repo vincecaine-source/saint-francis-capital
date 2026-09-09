@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Saint Francis Capital — Video End Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1920px;
+    height: 1080px;
+    background: #0a1424;
+    font-family: 'General Sans', 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* subtle radial glow + horizon band, echoing site's aviation motif */
+  .bg-glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 1400px 900px at 50% -10%, rgba(217,174,95,0.10), transparent 60%),
+      linear-gradient(180deg, #0a1424 0%, #0b1a30 55%, #0a1424 100%);
+  }
+
+  .horizon-line {
+    position: absolute;
+    left: 0; right: 0;
+    top: 62%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(217,174,95,0.35) 20%, rgba(217,174,95,0.35) 80%, transparent);
+  }
+
+  .frame-border {
+    position: absolute;
+    inset: 48px;
+    border: 1px solid rgba(217,174,95,0.22);
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 160px;
+  }
+
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 56px;
+  }
+  .logo-row svg.mark { width: 56px; height: 56px; color: #eae4d3; flex-shrink: 0; }
+  .logo-row .wordmark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  .logo-row .wordmark .line1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #eae4d3;
+  }
+  .logo-row .wordmark .line2 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #d9ae5f;
+    margin-top: 8px;
+  }
+
+  .eyebrow {
+    font-family: 'General Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #d9ae5f;
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.15;
+    color: #f8f5ec;
+    max-width: 1300px;
+    margin-bottom: 20px;
+  }
+
+  .subhead {
+    font-size: 26px;
+    color: #aab3c8;
+    max-width: 1100px;
+    margin-bottom: 64px;
+    line-height: 1.5;
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    background: rgba(234,228,211,0.05);
+    border: 1px solid rgba(217,174,95,0.3);
+    border-radius: 16px;
+    padding: 36px 64px;
+    margin-bottom: 44px;
+  }
+  .contact-divider {
+    width: 1px;
+    height: 60px;
+    background: rgba(217,174,95,0.3);
+  }
+  .contact-item { text-align: left; }
+  .contact-item .label {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6c7994;
+    margin-bottom: 8px;
+  }
+  .contact-item .value {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 30px;
+    color: #f8f5ec;
+    font-weight: 500;
+  }
+  .contact-item.name .value { color: #d9ae5f; }
+
+  .site-url {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 30px;
+    color: #f8f5ec;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+
+  .address-line {
+    font-size: 19px;
+    color: #aab3c8;
+    margin-bottom: 40px;
+  }
+
+  .disclosure {
+    position: absolute;
+    left: 96px;
+    right: 96px;
+    bottom: 70px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #6c7994;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="horizon-line"></div>
+  <div class="frame-border"></div>
+
+  <div class="content">
+    <div class="logo-row">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" role="img" aria-label="Saint Francis Capital mark">
+        <path d="M4 26.5 C 15.5 15, 24.5 15, 30 21.5 C 35.5 15, 44.5 15, 44 26.5
+                 C 35 21.4, 29.6 22.9, 24 29.7 C 18.4 22.9, 13 21.4, 4 26.5 Z" fill="currentColor"/>
+        <circle cx="7.5" cy="17.9" r="1.35" fill="#a97c2f"/>
+      </svg>
+      <div class="wordmark">
+        <span class="line1">Saint Francis Capital</span>
+        <span class="line2">WEALTH&nbsp;MANAGEMENT</span>
+      </div>
+    </div>
+
+    <p class="eyebrow">Built for United Pilots</p>
+    <h1>Ready for Your Complimentary&nbsp;Review?</h1>
+    <p class="subhead">No cost, no pressure — just an honest look at where you stand.</p>
+
+    <div class="contact-card">
+      <div class="contact-item name">
+        <div class="label">Contact</div>
+        <div class="value">Kelly Holliday</div>
+      </div>
+      <div class="contact-divider"></div>
+      <div class="contact-item">
+        <div class="label">Phone</div>
+        <div class="value">770.851.0934</div>
+      </div>
+      <div class="contact-divider"></div>
+      <div class="contact-item">
+        <div class="label">Email</div>
+        <div class="value" style="font-size:24px;">kelly.holliday@stfrancap.com</div>
+      </div>
+    </div>
+
+    <div class="site-url">stfrancap.com</div>
+    <div class="address-line">359 Rockwell Church Road NE, Winder, GA 30680</div>
+  </div>
+
+  <p class="disclosure">Saint Francis Capital is an independent Registered Investment Advisor and is not affiliated with, endorsed by, or sponsored by United Airlines, ALPA, or Charles Schwab.<br>This video is for informational purposes only and does not constitute investment, legal, or tax advice.</p>
+</body>
+</html>
