@@ -117,7 +117,7 @@ const openHook = new Paragraph({
   spacing: { after: 220 },
   children: [
     new TextRun({
-      text: 'Every pilot has one flight he never forgets.',
+      text: 'Every pilot has one flight they never forget.',
       font: 'Georgia', size: 25, color: NAVY, italics: true, bold: true,
     }),
   ],
